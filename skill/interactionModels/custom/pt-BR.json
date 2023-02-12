@@ -1,0 +1,94 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "controlar computador",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "OpenTerminalIntent",
+          "slots": [],
+          "samples": [
+            "linha de comando",
+            "terminal de comando",
+            "ternimal",
+            "abrir terminal"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "CloseTerminalIntent",
+          "slots": [],
+          "samples": [
+            "matar terminal",
+            "encerrar terminal",
+            "fechar terminal"
+          ]
+        },
+        {
+          "name": "OpenBrowserIntent",
+          "slots": [],
+          "samples": [
+            "navegador",
+            "abrir navegador"
+          ]
+        },
+        {
+          "name": "CloseBrowserIntent",
+          "slots": [],
+          "samples": [
+            "matar navegador",
+            "fechar navegador"
+          ]
+        },
+        {
+          "name": "HibernateIntent",
+          "slots": [],
+          "samples": [
+            "suspensão",
+            "suspender",
+            "hibernar",
+            "mode de hibernação",
+            "ativar hibernação",
+            "hibernação"
+          ]
+        },
+        {
+          "name": "OffIntent",
+          "slots": [],
+          "samples": [
+            "desativar",
+            "desativar computador",
+            "desligar",
+            "desligar computador"
+          ]
+        },
+        {
+          "name": "RestartIntent",
+          "slots": [],
+          "samples": [
+            "reinicializar",
+            "reinicialização",
+            "reiniciar",
+            "reiniciar computador"
+          ]
+        }
+      ],
+      "types": []
+    }
+  },
+  "version": "11"
+}

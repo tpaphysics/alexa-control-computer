@@ -1,0 +1,10 @@
+[Unit]
+Description=Controlar computador com a Alexa
+Wants=network-online.target
+After=network.target
+
+[Service]
+ExecStart=/bin/bash /opt/script/alexa-shell.sh
+
+[Install]
+WantedBy=multi-user.target
