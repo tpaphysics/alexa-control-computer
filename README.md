@@ -33,7 +33,7 @@ o computador é desligado.
 1. Crie uma conta no [HIVEMQ](https://www.hivemq.com/hivemq/mqtt-broker/).
    <br/>
 
-2. Entre com sua conta Amazon, acesse o [Alexa Developer Console ](https://developer.amazon.com/alexa/console/), na pasta lambda, renomeie o arquivo _.env.example_ para _.env_ , entre com as credenciais de sua conta [HIVEMQ](https://www.hivemq.com/hivemq/mqtt-broker/) e importe a pasta [skill](./skill/).
+2. Na pasta [skill](./skill/) entre em lambda, renomeie o arquivo _.env.example_ para _.env_ , entre com as credenciais de sua conta [HIVEMQ](https://www.hivemq.com/hivemq/mqtt-broker/). Agora entre com sua conta Amazon, acesse o [Alexa Developer Console ](https://developer.amazon.com/alexa/console/) e importe a skill.
    <br/>
 
 3. Na skill importada, clique na aba **Test**, e no campo **Skill testing is enabled in** e ative o modo Development. Acesse o campo **Code** e faça Deploy.
@@ -49,13 +49,13 @@ sudo systemctl enable alexa-shell
 sudo systemctl start alexa-shell
 ```
 
-se tudo estiver ok, ao digitar o comando:
+Se tudo estiver ok, ao digitar o comando:
 
 ```bash
 sudo systemctl status alexa-shell
 ```
 
-o status deve estar ativo.
+O status deve estar ativo.
 
 Para ativar a Skill, diga:
 
