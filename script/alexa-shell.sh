@@ -24,11 +24,11 @@ do
         ;;
 
         "computador/restart")
-            [ $cmd = '"on"' ] && reboot
+            [ $cmd = '"on"' ] && reboot &
         ;;
         
         "computador/hibernate")
-            [ $cmd = '"on"' ] && systemctl suspend
+            [ $cmd = '"on"' ] && systemctl suspend &
         ;;
 
         "computador/browser")
