@@ -30,15 +30,7 @@ do
         "computador/hibernate")
             [ $cmd = '"on"' ] && systemctl suspend &
         ;;
-
-        "computador/browser")
-            [ $cmd = '"open"' ] && brave-browser &
-        ;;
-
-        "computador/terminal")
-            [ $cmd = '"open"' ] && terminator &
-
-        ;;
+        
         esac
     done
     sleep 10 

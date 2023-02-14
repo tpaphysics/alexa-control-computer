@@ -16,43 +16,8 @@
           "samples": []
         },
         {
-          "name": "OpenTerminalIntent",
-          "slots": [],
-          "samples": [
-            "linha de comando",
-            "terminal de comando",
-            "ternimal",
-            "abrir terminal"
-          ]
-        },
-        {
           "name": "AMAZON.NavigateHomeIntent",
           "samples": []
-        },
-        {
-          "name": "CloseTerminalIntent",
-          "slots": [],
-          "samples": [
-            "matar terminal",
-            "encerrar terminal",
-            "fechar terminal"
-          ]
-        },
-        {
-          "name": "OpenBrowserIntent",
-          "slots": [],
-          "samples": [
-            "navegador",
-            "abrir navegador"
-          ]
-        },
-        {
-          "name": "CloseBrowserIntent",
-          "slots": [],
-          "samples": [
-            "matar navegador",
-            "fechar navegador"
-          ]
         },
         {
           "name": "HibernateIntent",

@@ -45,6 +45,7 @@ o computador é desligado.
 5. Copie o arquivo [alexa-shell.service](./alexa-shell.service) para o diretório /etc/systemd/system e execute os seguintes comandos:
 
 ```bash
+sudo systemctl daemon-reload
 sudo systemctl enable alexa-shell
 sudo systemctl start alexa-shell
 ```
@@ -74,8 +75,6 @@ Você poderá dizer:
 1. Desligar
 2. Hibernar
 3. Reiniciar
-4. Abrir Terminal
-5. Abrir Navegador
 
 ## **🙂 Observação**
 
