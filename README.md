@@ -12,7 +12,7 @@
 
 ## **🤖 Projeto**
 
-Neste projeto vamos executar comandos em um sistema operacional Linux via comando de voz através do assistente virtual Alexa. Foi construído uma skill Alexa que se conecta a uma conta no broker [HIVEMQ](https://www.hivemq.com/hivemq/mqtt-broker/) e **publica** mensagens em alguns tópicos. Por outro lado, foi construído um script em shell que roda localmente em um computador, e que também se conecta a essa mesma conta no broker [HIVEMQ](https://www.hivemq.com/hivemq/mqtt-broker/) e se **subscreve** em alguns tópicos. Desta forma, ao chegar a mensagem:
+Neste projeto vamos executar comandos em um sistema operacional Linux via comando de voz através do assistente virtual Alexa. Foi construído uma skill Alexa que se conecta a um cluster MQTT no [HIVEMQ](https://www.hivemq.com/hivemq/mqtt-broker/) e **publica** mensagens em alguns tópicos. Por outro lado, foi construído um script em shell que roda localmente em um computador, e que também se conecta a esse cluster no [HIVEMQ](https://www.hivemq.com/hivemq/mqtt-broker/) e se **subscreve** em alguns tópicos. Desta forma, ao chegar a mensagem:
 
 ```json
 {
@@ -30,10 +30,10 @@ o computador é desligado.
 
 ## 🚀 Get Started
 
-1. Crie uma conta no [HIVEMQ](https://www.hivemq.com/hivemq/mqtt-broker/).
+1. Faça login com GMAIL e crie um cluster MQTT no [HIVEMQ](https://www.hivemq.com/hivemq/mqtt-broker/).
    <br/>
 
-2. Na pasta [skill](./skill/) entre em lambda, renomeie o arquivo _.env.example_ para _.env_ , entre com as credenciais de sua conta [HIVEMQ](https://www.hivemq.com/hivemq/mqtt-broker/). Agora entre com sua conta Amazon, acesse o [Alexa Developer Console ](https://developer.amazon.com/alexa/console/) e importe a skill.
+2. Na pasta [skill](./skill/) entre em lambda, renomeie o arquivo _.env.example_ para _.env_ , entre com as credenciais de seu cluster. Agora entre com sua conta Amazon, acesse o [Alexa Developer Console ](https://developer.amazon.com/alexa/console/) e importe a skill.
    <br/>
 
 3. Na skill importada, clique na aba **Test**, e no campo **Skill testing is enabled in** e ative o modo Development. Acesse o campo **Code** e faça Deploy.
