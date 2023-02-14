@@ -39,7 +39,7 @@ o computador é desligado.
 3. Na skill importada, clique na aba **Test**, e no campo **Skill testing is enabled in** e ative o modo Development. Acesse o campo **Code** e faça Deploy.
    <br/>
 
-4. Em seu sistema operacional Linux, copie a **pasta script** para o diretório _/opt_, renomeie o arquivo _.env.example_ para _.env_ entre com as credenciais de sua conta [HIVEMQ](https://www.hivemq.com/hivemq/mqtt-broker/).
+4. Em seu sistema operacional Linux, copie a **pasta script** para o diretório _/opt_, renomeie o arquivo _.env.example_ para _.env_ entre com as credenciais de seu cluster.
    <br/>
 
 5. Copie o arquivo [alexa-shell.service](./alexa-shell.service) para o diretório /etc/systemd/system e execute os seguintes comandos:
