@@ -1,13 +1,7 @@
 <div align="center">
-<img src="https://img.shields.io/badge/amazon%20alexa-52b5f7?style=for-the-badge&logo=amazon%20alexa&logoColor=white" alt="Alexa" />    
-</div>
-
-<div align="center">
-<img src="https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white" alt="shell-script"/>  
-</div>
-
-<div align="center">
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPCclc4DOkgDZ2ZoD1A9V-4pEjRM0KGNjscP25dp3L&s" alt="shell-script" width="150px"/>  
+   <a href="https://www.amazon.com.br/s?k=alexa"><img src="https://img.shields.io/badge/-Alexa-00CAFF?style=flat-square&logo=amazon-alexa&logoColor=white"></a>
+   <a href="https://www.home-assistant.io/"><img src="https://img.shields.io/badge/-Home%20Assistant-41BDF5?style=flat-square&logo=home-assistant&logoColor=white"></a>
+   <a href="https://www.hivemq.com/"><img src="https://img.shields.io/badge/HiveMQ-black?style=flat-square&logo=hive&logoColor=yellow"></a>
 </div>
 
 ## **🤖 Projeto**
