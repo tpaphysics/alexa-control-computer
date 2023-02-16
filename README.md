@@ -6,7 +6,7 @@
 
 ## **🤖 Projeto**
 
-Neste projeto, você pode usar a Alexa para controlar seu computador por meio de comandos de voz. Foi construído uma skill Alexa que se conecta a um broker MQTT no HiveMQ e publica mensagens em alguns tópicos. Por outro lado, foi construído um script em shell que roda localmente em um computador, e que também se conecta a esse broker no HiveMQ e se inscreve em alguns tópicos. Ao receber mensagens em determinados tópicos, o script executa comandos no sistema operacional.
+Este é um projeto que permite executar comandos em um sistema operacional Linux por meio de comandos de voz da Alexa, utilizando uma skill personalizada. A skill é integrada ao HiveMQ, que permite enviar mensagens para tópicos específicos de um broker MQTT. Um script em shell que roda localmente é configurado para se inscrever nesses tópicos e, quando recebe uma mensagem, executa comandos no terminal.
 
 ## 🚀 Get Started
 
