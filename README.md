@@ -6,37 +6,26 @@
 
 ## **🤖 Projeto**
 
-Neste projeto vamos executar comandos em um sistema operacional Linux via comando de voz através do assistente virtual Alexa. Foi construído uma skill Alexa que se conecta a um cluster MQTT no [HIVEMQ](https://www.hivemq.com/hivemq/mqtt-broker/) e **publica** mensagens em alguns tópicos. Por outro lado, foi construído um script em shell que roda localmente em um computador, e que também se conecta a esse cluster no [HIVEMQ](https://www.hivemq.com/hivemq/mqtt-broker/) e se **subscreve** em alguns tópicos. Desta forma, ao chegar a mensagem:
-
-```json
-{
-  "cmd": "on"
-}
-```
-
-no tópico:
-
-```txt
-computador/turnOff
-```
-
-o computador é desligado.
+NNeste projeto, você pode usar a Alexa para controlar seu computador por meio de comandos de voz.. Foi construído uma skill Alexa que se conecta a um broker MQTT no HiveMQ e publica mensagens em alguns tópicos. Por outro lado, foi construído um script em shell que roda localmente em um computador, e que também se conecta a esse broker no HiveMQ e se inscreve em alguns tópicos.receber mensagens em determinados tópicos, o script executa comandos no sistema operacional.
 
 ## 🚀 Get Started
 
-1. Faça login com GMAIL e crie um cluster MQTT no [HIVEMQ](https://www.hivemq.com/hivemq/mqtt-broker/).
+1. Crie uma conta e uma conta e um cluster mqtt no HiveMQ
+
+2. Na pasta [skill](./skill/) entre em lambda, renomeie o arquivo _.env.example_ para _.env_ , entre com as credenciais de seu cluster
+
+3. Agora entre com sua conta Amazon, acesse o [Alexa Developer Console ](https://developer.amazon.com/alexa/console/), crie uma nova skill
+
+4. Clique na nova skill criada, no campo code, importe a pasta [skill](./skill/), em formato zip
+
+5. Clique na skill, build, Intents, JSON Editor, cole o conteúdo do arquivo [pt-BR.json](./skill/interactionModels/custom/pt-BR.json)
+
+6. Na skill importada, clique na aba **Test**, e no campo **Skill testing is enabled in** e ative o modo Development. Acesse o campo **Code** e faça Deploy.
+
+7. Em seu sistema operacional Linux, copie a **pasta script** para o diretório _/opt_, renomeie o arquivo _.env.example_ para _.env_ entre com as credenciais de seu broker mqtt que foi criado no HiveMQ
    <br/>
 
-2. Na pasta [skill](./skill/) entre em lambda, renomeie o arquivo _.env.example_ para _.env_ , entre com as credenciais de seu cluster. Agora entre com sua conta Amazon, acesse o [Alexa Developer Console ](https://developer.amazon.com/alexa/console/) e importe a skill.
-   <br/>
-
-3. Na skill importada, clique na aba **Test**, e no campo **Skill testing is enabled in** e ative o modo Development. Acesse o campo **Code** e faça Deploy.
-   <br/>
-
-4. Em seu sistema operacional Linux, copie a **pasta script** para o diretório _/opt_, renomeie o arquivo _.env.example_ para _.env_ entre com as credenciais de seu cluster.
-   <br/>
-
-5. Copie o arquivo [alexa-shell.service](./alexa-shell.service) para o diretório /etc/systemd/system e execute os seguintes comandos:
+8. Copie o arquivo [alexa-shell.service](./alexa-shell.service) para o diretório /etc/systemd/system e execute os seguintes comandos:
 
 ```bash
 sudo systemctl daemon-reload
@@ -44,31 +33,23 @@ sudo systemctl enable alexa-shell
 sudo systemctl start alexa-shell
 ```
 
-Se tudo estiver ok, ao digitar o comando:
-
-```bash
-sudo systemctl status alexa-shell
-```
-
-O status deve estar ativo.
-
 Para ativar a Skill, diga:
 
 ```txt
-"Alexa, controlar computador"
+ALEXA CONTROLAR COMPUTADOR
 ```
 
-A Alexa ira responder:
+Ela ira responder:
 
 ```
-"O que deseja ?"
+O QUE DESEJA?
 ```
 
 Você poderá dizer:
 
-1. Desligar
-2. Hibernar
-3. Reiniciar
+1. `Desligar`
+2. `Hibernar`
+3. `Reiniciar`
 
 ## **🙂 Observação**
 
@@ -85,3 +66,18 @@ Rode a Skill em modo de desenvolvimento, não submeta a skill para Amazon.
 ## **📝 License**
 
 Este projeto possui [licença](LICENSE.md) do tipo MIT.
+
+## 📞 Contato
+
+<a href="https://github.com/tpaphysics">
+  <img src="https://avatars.githubusercontent.com/u/46402647?s=400&u=5b00ec492908116235f3d0c6eee80b94840b2339&v=4" alt="Foto de perfil" width="80" style="border-radius:50%">
+</a>
+<br>
+<a href="mailto:physics.posgrad@gmail.com">
+  <img src="https://img.shields.io/badge/Email-Gmail-D14836?style=flat&logo=gmail&logoColor=white" alt="Email">
+</a>
+<br>
+
+<a href="seulinkedin.com">
+  <img src="https://img.shields.io/badge/LinkedIn-Profile-0077B5?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn">
+</a>
